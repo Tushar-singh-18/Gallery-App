@@ -1,16 +1,67 @@
-# React + Vite
+# 📸 Image Gallery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive image gallery built with React that fetches photos from the Picsum Photos API with pagination support.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Fetches random images from [Picsum Photos API](https://picsum.photos/)
+- Displays image author names
+- Pagination (Next / Prev buttons)
+- Loading state while data is being fetched
+- Fully responsive layout
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** — UI library
+- **Axios** — API calls
+- **Tailwind CSS** — Styling
+- **Vite** — Build tool
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone the repo
+git clone https://github.com/your-username/image-gallery.git
+
+# Go to project folder
+cd image-gallery
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+```
+
+## 🔗 API Used
+
+```
+https://picsum.photos/v2/list?page=1&limit=30
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   └── Card.jsx
+├── App.jsx
+└── main.jsx
+```
+
+## 🧠 Concepts Used
+
+- `useState` — store and update data
+- `useEffect` — fetch data on page load / page change
+- `axios` — make API requests
+- `.map()` — render list of cards
+- Tailwind CSS utility classes
+
+## 📸 Preview
+
+> Click Next / Prev to browse through different pages of images.
+
+## 👤 Author
+
+**Tushar**  
+[GitHub](https://github.com/your-username)
